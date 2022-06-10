@@ -16,7 +16,7 @@ async def save_group(bot, message):
     if temp.ME in r_j_check:
         if not await db.get_chat(message.chat.id):
             total=await bot.get_chat_members_count(message.chat.id)
-            r_j = message.from_user.mention if message.from_user else "Anonymous" 
+            r_j = message.from_user.mention if message.from_user else "riturajps" 
             await bot.send_message(LOG_CHANNEL, Script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j))       
             await db.add_chat(message.chat.id, message.chat.title)
         if message.chat.id in temp.BANNED_CHATS:
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi')
+            InlineKeyboardButton('Main Channel', url='https://t.me/streamerview')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('👉 🙋‍♂ Press me... 🥰 👈', url="https://t.me/AllTypesOfMovies_hindi")
+                InlineKeyboardButton('👉 🙋‍♂ Press me... 🥰 👈', url="https://t.me/streamerview")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
