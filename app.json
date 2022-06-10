@@ -1,5 +1,5 @@
 {
-    "name": "mrproviderx",
+    "name": "riturajps",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Anonymous-18110/mrproviderx",
-    "repository": "https://github.com/Anonymous-18110/mrproviderx",
+    "website": "https://github.com/riturajps/Media-Search-Bot-v2",
+    "repository": "https://github.com/riturajps/Media-Search-Bot-v2",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
