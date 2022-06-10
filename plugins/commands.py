@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi')
+                InlineKeyboardButton('Main Channel', url='https://t.me/streamerview')
             ],
             [
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -48,8 +48,8 @@ async def start(client, message):
             InlineKeyboardButton('Help', callback_data='help'),
             InlineKeyboardButton('About', callback_data='about')
             ],[
-            InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-            InlineKeyboardButton('Movie Grouop', url='https://t.me/movies_request_group01')
+            InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+            InlineKeyboardButton('Movie Grouop', url='https://t.me/piratedcitygroup')
             ],[
             InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
         ]]
@@ -94,8 +94,8 @@ async def start(client, message):
             InlineKeyboardButton('Help', callback_data='help'),
             InlineKeyboardButton('About', callback_data='about')
             ],[
-            InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-            InlineKeyboardButton('Movie Group', url='https://t.me/movies_request_group01')
+            InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/piratedcitygroup')
             ],[
             InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
         ]]
@@ -142,8 +142,8 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-                    InlineKeyboardButton('Movie Group', url='https://t.me/movies_request_group01')
+                    InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+                    InlineKeyboardButton('Movie Group', url='https://t.me/piratedcitygroup')
                 ]
                 ]
             try:
@@ -253,8 +253,8 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-            InlineKeyboardButton('Movie Group', url='https://t.me/movies_request_group01')
+            InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/piratedcitygroup')
         ]
         ]
     await client.send_cached_media(
