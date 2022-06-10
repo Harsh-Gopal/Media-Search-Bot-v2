@@ -99,7 +99,7 @@ def a(client, message: Message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To @anonymous_010100 !!**')
+        m.edit('**An Error Occured. Please Report This To @riturajps !!**')
         print(e)
     try:
         os.remove(audio_file)
