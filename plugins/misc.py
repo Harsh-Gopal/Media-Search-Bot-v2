@@ -33,15 +33,15 @@ async def showid(client, message):
         if message.reply_to_message:
             _id += (
                 "<b>➨ User ID</b>: "
-                f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
+                f"<code>{message.from_user.id if message.from_user else 'riturajps'}</code>\n"
                 "<b>➨ Replied User ID</b>: "
-                f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'Anonymous'}</code>\n"
+                f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'riturajps'}</code>\n"
             )
             file_info = get_file_id(message.reply_to_message)
         else:
             _id += (
                 "<b>➨ User ID</b>: "
-                f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
+                f"<code>{message.from_user.id if message.from_user else 'riturajps'}</code>\n"
             )
             file_info = get_file_id(message)
         if file_info:
@@ -162,7 +162,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             [
                 InlineKeyboardButton(
                     text=f"Main Channel",
-                    url="https://t.me/AllTypesOfMovies_hindi"
+                    url="https://t.me/Streamerview"
                 )
             ],
         ]
