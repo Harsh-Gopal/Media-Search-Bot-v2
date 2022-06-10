@@ -1,4 +1,3 @@
-# Kanged From @TroJanZheX
 import asyncio
 import re
 import ast
@@ -361,8 +360,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-                InlineKeyboardButton('Movie Group', url='https://t.me/movies_request_group01')
+                InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+                InlineKeyboardButton('Movie Group', url='https://t.me/piratedcitygroup')
             ]
             ]
             
@@ -412,11 +411,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-                InlineKeyboardButton('Movie Group', url='https://t.me/movies_request_group01')
+                InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+                InlineKeyboardButton('Movie Group', url='https://t.me/piratedcitygroup')
             ],
             [
-                InlineKeyboardButton('Series & Movie Group', url=f'https://t.me/movies_request_group01')
+                InlineKeyboardButton('Series & Movie Group', url=f'https://t.me/piratedcitygroup')
             ]
             ]
         await query.answer()
@@ -436,8 +435,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Help', callback_data='help'),
             InlineKeyboardButton('About', callback_data='about')
             ],[
-            InlineKeyboardButton('Main Channel', url='https://t.me/AllTypesOfMovies_hindi'),
-            InlineKeyboardButton('movie Group', url='https://t.me/movies_request_group01')
+            InlineKeyboardButton('Main Channel', url='https://t.me/streamerview'),
+            InlineKeyboardButton('movie Group', url='https://t.me/piratedcitygroup')
             ],[
             InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
         ]]
@@ -891,14 +890,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Main Channel ⭕️",url="https://t.me/AllTypesOfMovies_hindi")]
+            [InlineKeyboardButton(text="⭕️ Join Our Main Channel ⭕️",url="https://t.me/streamerview")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Main Channel ⭕️",url="https://t.me/AllTypesOfMovies_hindi")]
+            [InlineKeyboardButton(text="⭕️ Join Our Main Channel ⭕️",url="https://t.me/streamerview")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -936,7 +935,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/movies_request_group01'>© Main (Series & Movies) Group</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/piratedcitygroup'>© Main (Series & Movies) Group</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
